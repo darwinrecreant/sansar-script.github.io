@@ -31,7 +31,7 @@ In the quest creator panel click new quest
 
 Start by entering a quest name. 
 
-![Quest Information](/assets/images/introToQuests/quest-info.png)
+![Quest Information]({{ site.baseurl }}/assets/images/introToQuests/quest-info.png)
 
 Next input is a quest image, you can either upload an image that fits the exact image requirements, or you can use the screenshot tool to add a quest image later (The screenshot tool will crop your image to exact specified dimensions) If you do not add an image a default image will be provided by the api. 
 
