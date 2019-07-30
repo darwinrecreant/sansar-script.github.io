@@ -23,7 +23,7 @@ Open the store, either in a web browser or in Sansar, and get the following FREE
 
 Open Sansar, from main menu navigation choose Create > Create Quests.
 
-![Create quests screenshot](/assets/images/introToQuests/main-menu-create-quests.png)
+![Create quests screenshot](../assets/images/introToQuests/main-menu-create-quests.png)
 
 In the quest creator panel click new quest
 
