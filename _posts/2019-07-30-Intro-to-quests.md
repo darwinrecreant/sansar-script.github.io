@@ -278,11 +278,11 @@ And then turn down the emissive intensity to about `0.25`.
 
 Add a `Quest Script Library` script to 'Rock002' and choose `QuestObjectInteraction`, choose your quest and the objective this script its to complete. The script will send the `isComplete` command to complete the objective when the rocks are clicked. Change the `Complete objective Interaction` text to something like `moon rocks`.
 
-![Objective Interaction properties](/assets/images/introToQuests/moon-rocks-objective.png)
+![Objective Interaction properties]({{ site.baseurl }}/assets/images/introToQuests/moon-rocks-objective.png)
 
 Build and test your quest.Since this is the final objective your quest will end an the completion dialog will congratulate the player on succeeding.
 
-![Completion dialog](/assets/images/introToQuests/complete-dialog.png)
+![Completion dialog]({{ site.baseurl }}/assets/images/introToQuests/complete-dialog.png)
 
 Now that you have all the basic building blocks to make your own quests, go forth and quest all the things!
 
