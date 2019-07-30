@@ -23,7 +23,7 @@ Open the store, either in a web browser or in Sansar, and get the following FREE
 
 Open Sansar, from main menu navigation choose Create > Create Quests.
 
-![Create quests screenshot](../assets/images/introToQuests/main-menu-create-quests.png)
+![Create quests screenshot]({{ site.baseurl }}/assets/images/introToQuests/main-menu-create-quests.png)
 
 In the quest creator panel click new quest
 
@@ -35,24 +35,24 @@ Start by entering a quest name.
 
 Next input is a quest image, you can either upload an image that fits the exact image requirements, or you can use the screenshot tool to add a quest image later (The screenshot tool will crop your image to exact specified dimensions) If you do not add an image a default image will be provided by the api. 
 
-![exact quest image requirements screenshot](/assets/images/introToQuests/exact-quest-image-reqs.png)
+![exact quest image requirements screenshot]({{ site.baseurl }}/assets/images/introToQuests/exact-quest-image-reqs.png)
 
 
 Screenshot tool can be found from main  menu Socialize > Take a photo
 
-![Screenshot tool](/assets/images/introToQuests/screenshot-tool.png)
+![Screenshot tool]({{ site.baseurl }}/assets/images/introToQuests/screenshot-tool.png)
 
 Choose 'For a Quest' option to get the correct dimensions
 
-![Screenshot tool](/assets/images/introToQuests/screenshot-quest.png)
+![Screenshot tool]({{ site.baseurl }}/assets/images/introToQuests/screenshot-quest.png)
 
 Quest Description is the  next input this description will be shown when the quest is offered.
 
-![Quest description](/assets/images/introToQuests/description.png)
+![Quest description]({{ site.baseurl }}/assets/images/introToQuests/description.png)
 
 The last input is the completion message which will be shown when the quest is completed.
 
-![Complete text](/assets/images/introToQuests/complete-text.png)
+![Complete text]({{ site.baseurl }}/assets/images/introToQuests/complete-text.png)
 
 After hitting save on your new quest information, you will be brought to the quest objective editor. Click New to add an objective to your quest.
 
@@ -62,18 +62,18 @@ The first input is objective name, it is suggested to make this a brief command 
 
 The next input, optional extended description, is intended for longer text and is a good place to give hints or provide details to the quest story.
 
-![Extended description](/assets/images/introToQuests/quest-extended-description.png)
+![Extended description]({{ site.baseurl }}/assets/images/introToQuests/quest-extended-description.png)
 
 The objective state can be set here to either `Active` or `Locked`. Generally you want your first objective to be `Active`, as documentation states, if you start off with a `Locked` objective you would have to provide a script command to unlock it. 
 
-![Quest definition information screenshot](/assets/images/introToQuests/quest-objective-definition-info.png)
+![Quest definition information screenshot]({{ site.baseurl }}/assets/images/introToQuests/quest-objective-definition-info.png)
 
 
 We will make the rest of the objectives state `Locked` and the quest system will unlock each objectgive as the objective preceding it is completed.
 
-![Locked quest definition screenshot](/assets/images/introToQuests/quest-locked-objective-definition.png)
+![Locked quest definition screenshot]({{ site.baseurl }}/assets/images/introToQuests/quest-locked-objective-definition.png)
 
-![Last objective definition](/assets/images/introToQuests/quest-objective-definition-rock.png)
+![Last objective definition]({{ site.baseurl }}/assets/images/introToQuests/quest-objective-definition-rock.png)
 
 # QUEST GIVER
 
@@ -81,17 +81,17 @@ Now let's implement the quest we created by either opening an existing experienc
 
 Start by adding the "Quest Giver", a clickable object that will offer your quest to users. Drag the 'Little Copper Man' object into your scene, adjust the object's properties by right clicking the object in the scene or by selecting it in the Scene Objects panel to open Properties panel. Set `Motion Type` to `static` and set `Is Scriptable` to `On`, I also adjusted the `Scale` to `4` to fit my scene. 
 
-![Object properties navigation](/assets/images/introToQuests/copper-man-properties.png)
+![Object properties navigation]({{ site.baseurl }}/assets/images/introToQuests/copper-man-properties.png)
 
-![Quest giver property settings](/assets/images/introToQuests/quest-giver-settings.png)
+![Quest giver property settings]({{ site.baseurl }}/assets/images/introToQuests/quest-giver-settings.png)
 
 Add a script by right clicking either the object itself or selecting it in the Scene Objects panel and choosing Add > Script.
 
-![Add script right click screenshot](/assets/images/introToQuests/right-click-add-script.png)
+![Add script right click screenshot]({{ site.baseurl }}/assets/images/introToQuests/right-click-add-script.png)
 
 Select the `Quest Script Library` and in then select `QuestGiverInteraction` option. This is the basic option for a quest giver interaction which handles offering a quest by displaying a prompt when a player approaches and sending the offer quest event when a player accepts.
 
-![Quest giver interaction script screenshot](/assets/images/introToQuests/quest-giver-interaction-script.png)
+![Quest giver interaction script screenshot]({{ site.baseurl }}/assets/images/introToQuests/quest-giver-interaction-script.png)
 
 The `QuestGiver` script is more advanced, it offers quests to players in response to simple script commands, and sends simple script events when a quest state changes, we won't be using this for the quest giver interactions but we will demonstrate how this works using an objective interaction in steps ahead.
 
@@ -102,31 +102,31 @@ The `QuestGiverTriggerVolume` is also a simple interaction, it offers a quest wh
 
 Next Choose the quest you want this interaction to offer by selecting it from the dropdown of your available quests.
 
-![Select quest for giver interaction screenshot](/assets/images/introToQuests/select-quest-for-giver-interaction.png)
+![Select quest for giver interaction screenshot]({{ site.baseurl }}/assets/images/introToQuests/select-quest-for-giver-interaction.png)
 
 You should now be able to build and visit your scene to see your quest giver interaction text and the quest offer and accept interactions. 
 
-![Quest giver text](/assets/images/introToQuests/quest-giver-interaction-text.png)
+![Quest giver text]({{ site.baseurl }}/assets/images/introToQuests/quest-giver-interaction-text.png)
 
 Trigger the offer dialog and accept the quest.
 
-![Quest offer dialog](/assets/images/introToQuests/quest-giver-offer-dialog.png)
+![Quest offer dialog]({{ site.baseurl }}/assets/images/introToQuests/quest-giver-offer-dialog.png)
 
-![Quest log](/assets/images/introToQuests/moon-quest-demo-quest-log-no-image.png)
+![Quest log]({{ site.baseurl }}/assets/images/introToQuests/moon-quest-demo-quest-log-no-image.png)
 
 # DEBUGGING
 
 Now is a good time to talk about the quest debugging tools. The most obvious are the **RESET QUEST** buttons, found on both the quest player log and in the quest creator tool. These buttons give you the ability to "reset" your progress on the specific quest you are authoring and delete any progress you have made allowing you to restart the quest over again from the quest giver offering.
 
-![Player quest reset button](/assets/images/introToQuests/reset-quest-player.png)
+![Player quest reset button]({{ site.baseurl }}/assets/images/introToQuests/reset-quest-player.png)
 
 In the Quest Script Library you are given a Debugger script which you can attach to an object in the scene to log quest script messages to the debug console. Let's go back to editing our demo scene and add another script to the 'Little Copper Man'. Select Quest Script Library > Debugger, and make sure `Debug Mode` is flipped to `On`.
 
-![Adding debugger script](/assets/images/introToQuests/debugger-script.png)
+![Adding debugger script]({{ site.baseurl }}/assets/images/introToQuests/debugger-script.png)
 
 Once you have done that build and visit your scene. Open the debug console `ctrl + d`, you should see the debug output that *"Got quest definition:.."* and *"User Script loaded."* events were sent to it. Now open up the quest player log or the creator and reset your quest progress. You should see the debug confirm that your agent has had the quest reset, and the quest giver should again offer the quest to you.
 
-![Reset quest giver debug screenshot](/assets/images/introToQuests/reset-quest-giver-debug.png)
+![Reset quest giver debug screenshot]({{ site.baseurl }}/assets/images/introToQuests/reset-quest-giver-debug.png)
 
 # OBJECTIVES
 
@@ -136,13 +136,13 @@ Drag out the 'Animated Push Button' object and place it somewhere in your scene,
 
 Upload [LowerGravityAgentInteraction](https://github.com/lindenlab/sansar-script/blob/master/Users/binah/intro-to-quests/LowerAgentGravityInteraction.cs) script from our github repository. Import the script into your scene from import menu in the top left corner of Sansar.
 
-![Import menu](/assets/images/introToQuests/import-script.png)
+![Import menu]({{ site.baseurl }}/assets/images/introToQuests/import-script.png)
 
 Add the `LowerAgentGravity` script to the 'Animated Push Button'. 
 
 Open Properties panel and add an Interaction Prompt message `Anti-gravity button`, add the `Quest Command`, `gravityLoweredObjectiveComplete`, to send to the quest script api when a player completes this objective and set the `Gravity Factor` to `0.1` or leave the default value. 
 
-![Lower Agent Gravity script settings](/assets/images/introToQuests/interaction-gravity-settings.png)
+![Lower Agent Gravity script settings]({{ site.baseurl }}/assets/images/introToQuests/interaction-gravity-settings.png)
 
 Let's look into the script to see what it is doing. First thing we do is make our public declarations. We start with an `Interaction` object and provide a `DefaultValue` of "Click Me!" for the interaction text that will appear when a player approaches the object attached to the script. 
 
@@ -235,7 +235,7 @@ Quest object script will listen for the quest events defined in the inputs of th
 
 Don't forget to choose your quest and the objective that the script on this object will complete, `Lower your gravity`.
 
-![Lower gravity objective script settings](/assets/images/introToQuests/obj-gravity-lowered.png)
+![Lower gravity objective script settings]({{ site.baseurl }}/assets/images/introToQuests/obj-gravity-lowered.png)
 
 Build and test completing your first objective, if you haven't already, reset your quest progress before testing, it's usually best to do this before you enter your experience.
 
@@ -243,37 +243,37 @@ Drag out the 'Moon' object and place somewhere high over head.
 
 Add a Trigger Volume to the moon's top side. A Trigger Volume is an object that has volume and triggers an event when collision is detected, you can find them in your inventory under System.
 
-![Trigger volume](/assets/images/introToQuests/trigger-volume.png)
+![Trigger volume]({{ site.baseurl }}/assets/images/introToQuests/trigger-volume.png)
 
 In the Trigger Volume Properties set `Volume Type` to `Sphere`, set `Movable From Script` to `On`. 
 
-![Trigger volume setting](/assets/images/introToQuests/trigger-volume-settings.png)
+![Trigger volume setting]({{ site.baseurl }}/assets/images/introToQuests/trigger-volume-settings.png)
 
 Try to size and position the trigger volume so that it will only be triggered when an agent lands on the moon.
 
-![Moon trigger volume placement](/assets/images/introToQuests/moon-trigger.png)
+![Moon trigger volume placement]({{ site.baseurl }}/assets/images/introToQuests/moon-trigger.png)
 
 Add a script to the Trigger Volume, select `Sansar Script Library` and `Collisions` type. We want to send the `moonLandingComplete` command when a player collides, i.e. "lands", add `moonLandingComplete` to the `On Agent Collide` inout
 
-![Quest trigger volume objective](/assets/images/introToQuests/moonLanding-trigger-volume.png)
+![Quest trigger volume objective]({{ site.baseurl }}/assets/images/introToQuests/moonLanding-trigger-volume.png)
 
 Add another script this time from the `Quest Script Library` and `QuestObjectTriggerVolume` type. Add a listener for the command `moonLandingComplete` on the `On Complete` input, this event will be sent from the collision script and will trigger the quest script to send the objective complete event to the quest script api.Don't forget to select your quest and the objective which this script will complete `Land on the moon`.
 
-![Trigger objective interaction](/assets/images/introToQuests/land-on-moon-complete.png)
+![Trigger objective interaction]({{ site.baseurl }}/assets/images/introToQuests/land-on-moon-complete.png)
 
 Build and test your next objective if you run into issues don't forget to use the debug console to see what events are being sent to the quest system. (Don't forget you'll need to turn off your avatar's gravity to land on the moon )
 
 The final objective will be to collect a moon rock, so drag 'Rock002' to some place on the moon's surface and adjust `Scale` to about `0.25` and set `Is Scriptable` to `On`. I also adjusted the Materials to add an emmissive glow to match the moon. You can open the `Materials` panel by right clicking the object in world or in the Scene Objects panel and choosing Materials.
 
-![Open Materials panel](/assets/images/introToQuests/rock-materials.png)
+![Open Materials panel]({{ site.baseurl }}/assets/images/introToQuests/rock-materials.png)
 
 Change the Shader dropdown from `Standard + Alpha mask` to `Standard + Emissive`.
 
-![Emissive shader](/assets/images/introToQuests/emissive.png)
+![Emissive shader]({{ site.baseurl }}/assets/images/introToQuests/emissive.png)
 
 And then turn down the emissive intensity to about `0.25`.
 
-![Open Materials panel](/assets/images/introToQuests/emissive-intensity.png)
+![Open Materials panel]({{ site.baseurl }}/assets/images/introToQuests/emissive-intensity.png)
 
 
 Add a `Quest Script Library` script to 'Rock002' and choose `QuestObjectInteraction`, choose your quest and the objective this script its to complete. The script will send the `isComplete` command to complete the objective when the rocks are clicked. Change the `Complete objective Interaction` text to something like `moon rocks`.
