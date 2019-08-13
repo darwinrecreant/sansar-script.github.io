@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Binah
 title:  "Github contributions"
 date:   2019-08-06 00:00:00 -0700
 categories: github

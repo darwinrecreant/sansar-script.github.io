@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Binah
 title:  "YouTube streaming setup"
 date:   2019-08-08 00:00:00 -0700
 categories: streaming media 

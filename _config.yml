@@ -1,1 +1,11 @@
 theme: minima
+
+plugins:
+  - jekyll-seo-tag
+
+Binah:
+  name: Binah
+  web: https://profiles.sansar.com/profiles/Binah-Sansar
+EvoAv:
+  name: EvoAv
+  web: https://github.com/darwinrecreant

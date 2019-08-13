@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Binah
 title:  "Intro to Quests"
 date:   2019-07-30 00:00:00 -0700
 categories: quest
