@@ -3,7 +3,7 @@ layout: post
 author: Binah
 title:  "YouTube streaming setup"
 date:   2019-08-08 00:00:00 -0700
-categories: streaming media 
+categories: media
 ---
 
 Part of the Scripting Office Hours format is to include guest speakers from within the community to share something of note in relation to scripting in Sansar. This document is a guide for one way to stream that content using YouTube Live.
