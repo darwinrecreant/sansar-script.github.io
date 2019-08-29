@@ -36,6 +36,12 @@ Only one media stream can be played at a time in a scene, but a scene may have m
 
 Note the Initial Width & Height settings if a video looks blurry, especially if it's being played on a large surface, increase these values in multiples to start. For YouTube videos on a 16x9-ish surface, setting this to 1920x1080 will give a lot clearer quality.
 
+You must add an audio emitter and audio stream to hear the audio. You may have up to 4 different audio streams in an experience. 
+
+Add the audio stream url (the same as the media url) in the `Audio Streams` section of `Scene Settings` just above the `Media Surfaces` section. Then drag an audio emitter from your System Inventory and set the `Sound Source` to `Stream`.
+
+![Materials editor]({{ site.baseurl }}/assets/images/streaming-media/audio-emitter-settings.png)
+
 With Audio/Video Preview ON, changing settings will update the media surface in realtime, making it easy for you to fine-tune results.
 
 ![Audio Video Preview]({{ site.baseurl }}/assets/images/streaming-media/audio-video-preview.png)
