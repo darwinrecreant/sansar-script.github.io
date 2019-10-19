@@ -3,7 +3,7 @@ layout: post
 author: "EvoAv"
 title:  "Serverless Scene Media"
 date:   2019-08-10 00:00:00 -0700
-categories: tips
+categories: media
 ---
 Sansar allows scene creators to embed web media into their scenes which are rendered by the embedded browser. This normally means having to host your content on an external server, especially if you need dynamic content, which would then require managing a database and backend code as well. If you make an update then you need to refresh the page for everyone in the experience. This results in a costly setup, temporary white screens when updating, and unecessary network requests.
 
