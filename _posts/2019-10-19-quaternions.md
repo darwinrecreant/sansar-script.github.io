@@ -2,7 +2,7 @@
 layout: post
 author: "EvoAv"
 title:  "Quaternions Cheatsheet"
-date:   2019-19-19 00:00:00 -0700
+date:   2019-10-19 00:00:00 -0700
 categories: tips
 ---
 Quaternions are a representation of rotation _change_ in 3d evironments. Rotation change means that it could represent more than a full 360 degree rotation or even a 0 rotation change. The constant of zero rotation is `Quaternion.Identity`.
