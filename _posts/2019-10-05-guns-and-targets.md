@@ -14,7 +14,7 @@ The following assets are being used in the post
 ](https://store.sansar.com/listings/54247d28-ae44-48c3-a59a-584f185c5397/revolver-firearm-gun)
 - [Military Target](https://store.sansar.com/listings/90e9ed7c-5a0c-4dcc-b1f7-6d2773124ff7/military-target)
 - [Breaking Bottle (customizable)](https://store.sansar.com/listings/137a3118-61fd-4cf5-a64f-345d99be4151/breaking-bottle-customizable)
-- [Exploding Target](https://store.sansar.com/listings/cfb01fc0-0822-466b-af03-140d9493f353/exploding-target)
+- [Simple Animation with Auto Reset Script](https://store.sansar.com/listings/981d70f7-52d3-40b3-a547-7063b29eaad2/simpleanimationwithautoreset)
 - [Hits and impact sounds from fesliyanstudios.com](https://www.fesliyanstudios.com/royalty-free-sound-effects-download/hits-and-impacts-118)
 - [Shooting sounds from soundbible.com](http://soundbible.com/tags-shooting.html)
 
@@ -165,33 +165,26 @@ Do the same for the military target, make sure the script is setup how you like 
 
 ![military targets]({{ site.baseurl }}/assets/images/guns/military-targets.png)
 
-Lets get some exploding targets going as well, for this demo I purchase objects that have an exploding animation from the store, a [target](https://store.sansar.com/listings/cfb01fc0-0822-466b-af03-140d9493f353/exploding-target) and a [bottle](https://store.sansar.com/listings/137a3118-61fd-4cf5-a64f-345d99be4151/breaking-bottle-customizable).
+Lets get some exploding targets going as well, a breaking [bottle](https://store.sansar.com/listings/137a3118-61fd-4cf5-a64f-345d99be4151/breaking-bottle-customizable) from the store.
 
 Starting with the bottle drag it out and set the initial settings `Is Scriptable` to `On`, `Play back Mode` to `SinglePlay` and `Begin On Load` to `Off`.
 
 ![initial bottle settings]({{ site.baseurl }}/assets/images/guns/bottle-initial.png)
 
-Add the PewPewExtended script and enter a target event and a sound.
-
-![bottle pew pew settings]({{ site.baseurl }}/assets/images/guns/bottle-pew-pew.png)
-
-Add an `Animation` script from  `Sansar Script Library` and set the `Play` event to match the Pew Pew event.
-
-![bottle animation settings]({{ site.baseurl }}/assets/images/guns/bottle-animation.png)
-
 For this object I found that I needed to also adjust the volume component in order to make the target script work, by setting `Volume Type` to `Box` and resizing and positioning over the mesh. 
 
 ![bottle volume settings]({{ site.baseurl }}/assets/images/guns/bottle-volume.png)
 
-At this point build and test that when you hit the bottle it explodes and makes a sound. If it's all working save the bottle to your inventory and give it a distinct name.
+At this point save the bottle to your inventory and give it a distinct name.
 
 ![save to inventory]({{ site.baseurl }}/assets/images/guns/save-to-inventory.png)
 
+Add the PewPewExtended script and enter a target event and a sound.
 
-One last thing to add is a `Dispenser` script from  `Sansar Script Library` asking it to `Dispense Object` when it receives the event name `dispense_bottles` and the `Object` it will dispense is the bottle in its unbroken form so that there are infinite bottle targets. 
+![bottle pew pew settings]({{ site.baseurl }}/assets/images/guns/bottle-pew-pew.png)
 
-![bottle dispenser]({{ site.baseurl }}/assets/images/guns/bottle_dispenser.png)
+Next add the [Animation Reset Script](https://store.sansar.com/listings/981d70f7-52d3-40b3-a547-7063b29eaad2/simpleanimationwithautoreset) from the same creators of the breaking bottle to reset  the animation a few seconds after the animation has played (read bottle breaking listing for animation frame details).
 
-Now add a `Chat Command` to reset  the bottles using the bottle dispenser event to something in your scene. Duplicate as many bottles as you like.
+![bottle pew pew settings]({{ site.baseurl }}/assets/images/guns/simple-animation-reset.png)
 
-![save to inventory]({{ site.baseurl }}/assets/images/guns/dispense_bottles.png)
+Run a build and test out, you should be breaking the bottles on hit and a few seconds later they reset to their full bottle form. 
