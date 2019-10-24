@@ -239,6 +239,20 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
+                    <a href="#P:Sansar.Simulation.UIProgressBar.Id">Id</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. 
+            The bar's ID.
+            </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
                     <a href="../Sansar.Script/InstanceInterface.html#P:Sansar.Script.InstanceInterface.IsValid">IsValid</a>
                   </b>
                 </td>
@@ -248,6 +262,20 @@
                   </i>. 
             Whether or not this interface is valid.
              (<i>Inherited from <a href="../Sansar.Script/InstanceInterface.html">Sansar.Script.InstanceInterface</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.UIProgressBar.Label">Label</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+            The bar's current Label
+            </td>
               </tr>
             </table>
           </div>
@@ -292,6 +320,15 @@
             Start a progress bar.
             </blockquote></td>
               </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.UIProgressBar.ToString()">ToString</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote> A string representation of this object. </blockquote></td>
+              </tr>
             </table>
           </div>
         </div>
@@ -312,6 +349,43 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.UIProgressBar.Cancel():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.UIProgressBar.Id">Id Property</h3>
+        <blockquote id="P:Sansar.Simulation.UIProgressBar.Id:member">
+          <div class="msummary">
+            The bar's ID.
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Id</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.UIProgressBar.Id:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.UIProgressBar.Id:Remarks">This ID is only unique to this user's particular session. It is not globally unique.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.UIProgressBar.Id:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.UIProgressBar.Label">Label Property</h3>
+        <blockquote id="P:Sansar.Simulation.UIProgressBar.Label:member">
+          <div class="msummary">
+            The bar's current Label
+            </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Label</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.UIProgressBar.Label:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.UIProgressBar.Label:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.UIProgressBar.Label:Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
@@ -382,6 +456,20 @@
           <div class="SectionBox" id="M:Sansar.Simulation.UIProgressBar.Start(System.String,System.Single,Sansar.Color,System.Action{Sansar.Script.OperationCompleteEvent}):Remarks">Call this with <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.WaitFor``3(System.Action{``0,``1,``2,System.Action{Sansar.Script.OperationCompleteEvent}},``0,``1,``2)">Sansar.Script.ScriptBase.WaitFor``3(Action&lt;``0, ``1, ``2, Action&lt;Sansar.Script.OperationCompleteEvent&gt;&gt;,``0,``1,``2)</a> in a coroutine to block until the event is generated.</div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.UIProgressBar.Start(System.String,System.Single,Sansar.Color,System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.UIProgressBar.ToString()">ToString Method</h3>
+        <blockquote id="M:Sansar.Simulation.UIProgressBar.ToString():member">
+          <div class="msummary"> A string representation of this object. </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ToString</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.UIProgressBar.ToString():Returns">A string representation of this object.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.UIProgressBar.ToString():Remarks">The format of this string may change between releases.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.UIProgressBar.ToString():Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>

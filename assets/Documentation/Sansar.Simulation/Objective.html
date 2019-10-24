@@ -256,6 +256,21 @@
                   </i>. The session Id for the user on this quest.</td>
               </tr>
               <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.Objective.Count">Count</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. Get the number of objectives collected for this user.</td>
+              </tr>
+              <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
@@ -282,6 +297,18 @@
                   </i>. 
             Whether or not this interface is valid.
              (<i>Inherited from <a href="../Sansar.Script/InstanceInterface.html">Sansar.Script.InstanceInterface</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.Objective.Ready">Ready</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. If the Objective data is ready.</td>
               </tr>
             </table>
           </div>
@@ -339,6 +366,26 @@
                     <a href="#M:Sansar.Simulation.Objective.ToString()">ToString</a>
                   </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote> A string representation of this object. </blockquote></td>
               </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.Objective.Update()">Update</a>
+                  </b>()<blockquote>Update the ObjectiveDefinition data.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.Objective.Update(System.Action{Sansar.Script.OperationCompleteEvent})">Update</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a>)<blockquote>Update the ObjectiveDefinition data.</blockquote></td>
+              </tr>
             </table>
           </div>
         </div>
@@ -361,6 +408,22 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="P:Sansar.Simulation.Objective.Agent:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.Objective.Count">Count Property</h3>
+        <blockquote id="P:Sansar.Simulation.Objective.Count:member">
+          <div class="msummary">Get the number of objectives collected for this user.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />[set: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Count</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.Objective.Count:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.Objective.Count:Remarks">Returns -1 if the Objective is not Ready.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.Objective.Count:Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
@@ -398,6 +461,22 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.Objective.GetState():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.Objective.Ready">Ready Property</h3>
+        <blockquote id="P:Sansar.Simulation.Objective.Ready:member">
+          <div class="msummary">If the Objective data is ready.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Ready</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.Objective.Ready:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.Objective.Ready:Remarks">Returns false until the data has been fetched from the quest service. Once it returns true it will always return true.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.Objective.Ready:Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
@@ -499,6 +578,39 @@
           <div class="SectionBox" id="M:Sansar.Simulation.Objective.ToString():Remarks">The format of this string may change between releases.</div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.Objective.ToString():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.Objective.Update()">Update Method</h3>
+        <blockquote id="M:Sansar.Simulation.Objective.Update():member">
+          <div class="msummary">Update the ObjectiveDefinition data.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Update</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Objective.Update():Remarks">Use in a WaitFor to wait for the data for the QuestDefinition to be ready. Once data is retrieved and Ready is true it will never again be false.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Objective.Update():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.Objective.Update(System.Action{Sansar.Script.OperationCompleteEvent})">Update Method</h3>
+        <blockquote id="M:Sansar.Simulation.Objective.Update(System.Action{Sansar.Script.OperationCompleteEvent}):member">
+          <div class="msummary">Update the ObjectiveDefinition data.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Update</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a> handler)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.Objective.Update(System.Action{Sansar.Script.OperationCompleteEvent}):Parameters">
+            <dl>
+              <dt>
+                <i>handler</i>
+              </dt>
+              <dd>Handler to be called when the event completes.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Objective.Update(System.Action{Sansar.Script.OperationCompleteEvent}):Remarks">Use in a WaitFor to wait for the data for the QuestDefinition to be ready. Once data is retrieved and Ready is true it will never again be false.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.Objective.Update(System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>

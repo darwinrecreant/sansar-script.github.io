@@ -237,34 +237,70 @@
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Sansar.Simulation.CharacterTracker.ActiveQuests">ActiveQuests</a>
+                    <a href="#P:Sansar.Simulation.CharacterTracker.ActiveQuestCount">ActiveQuestCount</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../Sansar.Simulation/Quest.html">Quest</a>[]</i>. Currently active quests.</td>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. Number of this character's quests currently active for this user.</td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Sansar.Simulation.CharacterTracker.AvailableQuests">AvailableQuests</a>
+                    <a href="#P:Sansar.Simulation.CharacterTracker.ActiveQuestDefinitions">ActiveQuestDefinitions</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../Sansar.Simulation/Quest.html">Quest</a>[]</i>. Quests that are available to be offered.</td>
+                    <a href="../Sansar.Simulation/QuestDefinition.html">QuestDefinition</a>[]</i>. Currently active quests.</td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
                 <td>
                   <b>
-                    <a href="#P:Sansar.Simulation.CharacterTracker.CanTurnInQuests">CanTurnInQuests</a>
+                    <a href="#P:Sansar.Simulation.CharacterTracker.AvailableQuestCount">AvailableQuestCount</a>
                   </b>
                 </td>
                 <td>
                   <i>
-                    <a href="../Sansar.Simulation/Quest.html">Quest</a>[]</i>. Quests that are ready to be turned in to this character.</td>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. umber of this character's quests currently available for this user.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.CharacterTracker.AvailableQuestDefinitions">AvailableQuestDefinitions</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../Sansar.Simulation/QuestDefinition.html">QuestDefinition</a>[]</i>. Quests that are available to be offered.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.CharacterTracker.CanTurnInQuestCount">CanTurnInQuestCount</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. umber of this character's quests ready to be turned in for this user.</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:Sansar.Simulation.CharacterTracker.CanTurnInQuestDefinitions">CanTurnInQuestDefinitions</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../Sansar.Simulation/QuestDefinition.html">QuestDefinition</a>[]</i>. Quests that are ready to be turned in to this character.</td>
               </tr>
               <tr valign="top">
                 <td>[read-only]<div></div></td>
@@ -346,54 +382,105 @@
     <div class="Members" id="T:Sansar.Simulation.CharacterTracker:Members">
       <h2 class="Section" id="MemberDetails">Member Details</h2>
       <div class="SectionBox" id="_MemberDetails">
-        <h3 id="P:Sansar.Simulation.CharacterTracker.ActiveQuests">ActiveQuests Property</h3>
-        <blockquote id="P:Sansar.Simulation.CharacterTracker.ActiveQuests:member">
+        <h3 id="P:Sansar.Simulation.CharacterTracker.ActiveQuestCount">ActiveQuestCount Property</h3>
+        <blockquote id="P:Sansar.Simulation.CharacterTracker.ActiveQuestCount:member">
+          <div class="msummary">Number of this character's quests currently active for this user.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>ActiveQuestCount</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuestCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuestCount:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuestCount:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.CharacterTracker.ActiveQuestDefinitions">ActiveQuestDefinitions Property</h3>
+        <blockquote id="P:Sansar.Simulation.CharacterTracker.ActiveQuestDefinitions:member">
           <div class="msummary">Currently active quests.</div>
           <h2>Syntax</h2>
-          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/Quest.html">Quest</a>[] <b>ActiveQuests</b>  { get; }</div>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/QuestDefinition.html">QuestDefinition</a>[] <b>ActiveQuestDefinitions</b>  { get; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuests:Value">
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuestDefinitions:Value">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuests:Remarks">
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuestDefinitions:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuests:Version Information">
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.ActiveQuestDefinitions:Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:Sansar.Simulation.CharacterTracker.AvailableQuests">AvailableQuests Property</h3>
-        <blockquote id="P:Sansar.Simulation.CharacterTracker.AvailableQuests:member">
+        <h3 id="P:Sansar.Simulation.CharacterTracker.AvailableQuestCount">AvailableQuestCount Property</h3>
+        <blockquote id="P:Sansar.Simulation.CharacterTracker.AvailableQuestCount:member">
+          <div class="msummary">umber of this character's quests currently available for this user.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>AvailableQuestCount</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuestCount:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuestCount:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuestCount:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.CharacterTracker.AvailableQuestDefinitions">AvailableQuestDefinitions Property</h3>
+        <blockquote id="P:Sansar.Simulation.CharacterTracker.AvailableQuestDefinitions:member">
           <div class="msummary">Quests that are available to be offered.</div>
           <h2>Syntax</h2>
-          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/Quest.html">Quest</a>[] <b>AvailableQuests</b>  { get; }</div>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/QuestDefinition.html">QuestDefinition</a>[] <b>AvailableQuestDefinitions</b>  { get; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuests:Value">
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuestDefinitions:Value">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuests:Remarks">
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuestDefinitions:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuests:Version Information">
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.AvailableQuestDefinitions:Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
-        <h3 id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuests">CanTurnInQuests Property</h3>
-        <blockquote id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuests:member">
-          <div class="msummary">Quests that are ready to be turned in to this character.</div>
+        <h3 id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestCount">CanTurnInQuestCount Property</h3>
+        <blockquote id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestCount:member">
+          <div class="msummary">umber of this character's quests ready to be turned in for this user.</div>
           <h2>Syntax</h2>
-          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/Quest.html">Quest</a>[] <b>CanTurnInQuests</b>  { get; }</div>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>CanTurnInQuestCount</b>  { get; }</div>
           <h4 class="Subsection">Value</h4>
-          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuests:Value">
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestCount:Value">
             <span class="NotEntered">Documentation for this section has not yet been entered.</span>
           </blockquote>
           <h2 class="Section">Remarks</h2>
-          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuests:Remarks">
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestCount:Remarks">
           </div>
           <h2 class="Section">Requirements</h2>
-          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuests:Version Information">
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestCount:Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestDefinitions">CanTurnInQuestDefinitions Property</h3>
+        <blockquote id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestDefinitions:member">
+          <div class="msummary">Quests that are ready to be turned in to this character.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[get: Sansar.Script.Interface]<br />public <a href="../Sansar.Simulation/QuestDefinition.html">QuestDefinition</a>[] <b>CanTurnInQuestDefinitions</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestDefinitions:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestDefinitions:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:Sansar.Simulation.CharacterTracker.CanTurnInQuestDefinitions:Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>

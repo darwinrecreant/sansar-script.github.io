@@ -350,6 +350,46 @@
                 </td>
                 <td colspan="2">
                   <b>
+                    <a href="#M:Sansar.Simulation.AgentPrivate.GetSpeedFactor()">GetSpeedFactor</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a></nobr><blockquote>Retrieves what factor of the base speed to apply to this agent.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean)">IgnoreCollisionWith</a>
+                  </b>(<a href="../Sansar.Simulation/RigidBodyComponent.html">RigidBodyComponent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>Sets whether this agent will ignore collisions with a specific <a href="../Sansar.Simulation/RigidBodyComponent.html">Sansar.Simulation.RigidBodyComponent</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean,System.Action{Sansar.Script.OperationCompleteEvent})">IgnoreCollisionWith</a>
+                  </b>(<a href="../Sansar.Simulation/RigidBodyComponent.html">RigidBodyComponent</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a>)<blockquote>Sets whether this agent will ignore collisions with a specific <a href="../Sansar.Simulation/RigidBodyComponent.html">Sansar.Simulation.RigidBodyComponent</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent)">IsCollisionIgnoredWith</a>
+                  </b>(<a href="../Sansar.Simulation/RigidBodyComponent.html">RigidBodyComponent</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>Checks whether an agent is ignoring collisions with a specific <a href="../Sansar.Simulation/RigidBodyComponent.html">Sansar.Simulation.RigidBodyComponent</a>.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
                     <a href="#M:Sansar.Simulation.AgentPrivate.OverrideAudioStream(System.String)">OverrideAudioStream</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>Overrides source of web audio streams.</blockquote></td>
               </tr>
@@ -512,6 +552,26 @@
                   <b>
                     <a href="#M:Sansar.Simulation.AgentPrivate.SetGravityFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent})">SetGravityFactor</a>
                   </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a>)<blockquote>Sets what factor of the world's gravity is applied to this agent.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single)">SetSpeedFactor</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>)<blockquote>Sets what factor of the base speed to apply to this agent.</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent})">SetSpeedFactor</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a>)<blockquote>Sets what factor of the base speed to apply to this agent.</blockquote></td>
               </tr>
               <tr valign="top">
                 <td>
@@ -699,6 +759,104 @@
           </div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.GetHeldRigidBodies():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.AgentPrivate.GetSpeedFactor()">GetSpeedFactor Method</h3>
+        <blockquote id="M:Sansar.Simulation.AgentPrivate.GetSpeedFactor():member">
+          <div class="msummary">Retrieves what factor of the base speed to apply to this agent.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> <b>GetSpeedFactor</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.GetSpeedFactor():Returns">The speed factor.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.GetSpeedFactor():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.GetSpeedFactor():Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean)">IgnoreCollisionWith Method</h3>
+        <blockquote id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean):member">
+          <div class="msummary">Sets whether this agent will ignore collisions with a specific <a href="../Sansar.Simulation/RigidBodyComponent.html">Sansar.Simulation.RigidBodyComponent</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>IgnoreCollisionWith</b> (<a href="../Sansar.Simulation/RigidBodyComponent.html">RigidBodyComponent</a> rigidBodyComponent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> ignoreBody)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>rigidBodyComponent</i>
+              </dt>
+              <dd>The RigidBodyComponent with which to change collision behavior.</dd>
+              <dt>
+                <i>ignoreBody</i>
+              </dt>
+              <dd>When true, collision will be added to the ignore list. When false, collision will removed from the ignore list.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean):Remarks">This asynchronous method queues the write then returns.
+            To block until the write has occurred, pass this method to <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.WaitFor">Sansar.Script.ScriptBase.WaitFor</a> while in a coroutine.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean,System.Action{Sansar.Script.OperationCompleteEvent})">IgnoreCollisionWith Method</h3>
+        <blockquote id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean,System.Action{Sansar.Script.OperationCompleteEvent}):member">
+          <div class="msummary">Sets whether this agent will ignore collisions with a specific <a href="../Sansar.Simulation/RigidBodyComponent.html">Sansar.Simulation.RigidBodyComponent</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>IgnoreCollisionWith</b> (<a href="../Sansar.Simulation/RigidBodyComponent.html">RigidBodyComponent</a> rigidBodyComponent, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> ignoreBody, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a> handler)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean,System.Action{Sansar.Script.OperationCompleteEvent}):Parameters">
+            <dl>
+              <dt>
+                <i>rigidBodyComponent</i>
+              </dt>
+              <dd>The RigidBodyComponent with which to change collision behavior.</dd>
+              <dt>
+                <i>ignoreBody</i>
+              </dt>
+              <dd>When true, collision will be added to the ignore list. When false, collision will removed from the ignore list.</dd>
+              <dt>
+                <i>handler</i>
+              </dt>
+              <dd>Handler to be called when the event completes.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean,System.Action{Sansar.Script.OperationCompleteEvent}):Remarks">This asynchronous method queues the write then returns.
+            To block until the write has occurred, pass this method to <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.WaitFor">Sansar.Script.ScriptBase.WaitFor</a> while in a coroutine.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.IgnoreCollisionWith(Sansar.Simulation.RigidBodyComponent,System.Boolean,System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent)">IsCollisionIgnoredWith Method</h3>
+        <blockquote id="M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent):member">
+          <div class="msummary">Checks whether an agent is ignoring collisions with a specific <a href="../Sansar.Simulation/RigidBodyComponent.html">Sansar.Simulation.RigidBodyComponent</a>.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsCollisionIgnoredWith</b> (<a href="../Sansar.Simulation/RigidBodyComponent.html">RigidBodyComponent</a> rigidBodyComponent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent):Parameters">
+            <dl>
+              <dt>
+                <i>rigidBodyComponent</i>
+              </dt>
+              <dd>The RigidBodyComponent that could possibly be ignored.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.IsCollisionIgnoredWith(Sansar.Simulation.RigidBodyComponent):Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
@@ -1135,7 +1293,7 @@
               <dt>
                 <i>gravityFactor</i>
               </dt>
-              <dd>The gravityFactor. Default value is 1, range is -2 to 2</dd>
+              <dd>The gravityFactor. Default value is 1, range is clamped between -2 to 2</dd>
             </dl>
           </blockquote>
           <h4 class="Subsection">Returns</h4>
@@ -1159,7 +1317,7 @@
               <dt>
                 <i>gravityFactor</i>
               </dt>
-              <dd>The gravityFactor. Default value is 1, range is -2 to 2</dd>
+              <dd>The gravityFactor. Default value is 1, range is clamped between -2 to 2</dd>
               <dt>
                 <i>handler</i>
               </dt>
@@ -1173,6 +1331,54 @@
             To block until the write has occurred, pass this method to <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.WaitFor">Sansar.Script.ScriptBase.WaitFor</a> while in a coroutine.</div>
           <h2 class="Section">Requirements</h2>
           <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.SetGravityFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single)">SetSpeedFactor Method</h3>
+        <blockquote id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single):member">
+          <div class="msummary">Sets what factor of the base speed to apply to this agent.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetSpeedFactor</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> speedFactor)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single):Parameters">
+            <dl>
+              <dt>
+                <i>speedFactor</i>
+              </dt>
+              <dd>The speedFactor. Default value is 1, range is clamped between 0.1 to 4</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single):Remarks">This asynchronous method queues the write then returns.
+            To block until the write has occurred, pass this method to <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.WaitFor">Sansar.Script.ScriptBase.WaitFor</a> while in a coroutine.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single):Version Information">
+            <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent})">SetSpeedFactor Method</h3>
+        <blockquote id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent}):member">
+          <div class="msummary">Sets what factor of the base speed to apply to this agent.</div>
+          <h2>Syntax</h2>
+          <div class="Signature">[Sansar.Script.Interface]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetSpeedFactor</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> speedFactor, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Action`1">Action&lt;Sansar.Script.OperationCompleteEvent&gt;</a> handler)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent}):Parameters">
+            <dl>
+              <dt>
+                <i>speedFactor</i>
+              </dt>
+              <dd>The speedFactor. Default value is 1, range is clamped between 0.1 to 4</dd>
+              <dt>
+                <i>handler</i>
+              </dt>
+              <dd>Handler to be called when the event completes.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent}):Remarks">This asynchronous method queues the write then returns.
+            To block until the write has occurred, pass this method to <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.WaitFor">Sansar.Script.ScriptBase.WaitFor</a> while in a coroutine.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:Sansar.Simulation.AgentPrivate.SetSpeedFactor(System.Single,System.Action{Sansar.Script.OperationCompleteEvent}):Version Information">
             <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
           <hr size="1" />
         </blockquote>
