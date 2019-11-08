@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Sansar.Simulation.StreamChannel</title>
+    <title>Sansar.Microthreading.ApiErrorMode</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <style>
         a { text-decoration: none }
@@ -193,60 +193,87 @@
   </head>
   <body>
     <div class="CollectionTitle">
-      <a href="../index.html">Sansar.Simulation</a> : <a href="index.html">Sansar.Simulation Namespace</a></div>
+      <a href="../index.html">Sansar.Script</a> : <a href="index.html">Sansar.Microthreading Namespace</a></div>
     <div class="SideBar">
       <p>
-        <a href="#T:Sansar.Simulation.StreamChannel">Overview</a>
+        <a href="#T:Sansar.Microthreading.ApiErrorMode">Overview</a>
       </p>
       <p>
-        <a href="#T:Sansar.Simulation.StreamChannel:Signature">Signature</a>
+        <a href="#T:Sansar.Microthreading.ApiErrorMode:Signature">Signature</a>
       </p>
       <p>
-        <a href="#T:Sansar.Simulation.StreamChannel:Docs">Remarks</a>
+        <a href="#T:Sansar.Microthreading.ApiErrorMode:Docs">Remarks</a>
       </p>
       <p>
         <a href="#Members">Members</a>
       </p>
       <p>
-        <a href="#T:Sansar.Simulation.StreamChannel:Members">Member Details</a>
+        <a href="#T:Sansar.Microthreading.ApiErrorMode:Members">Member Details</a>
       </p>
     </div>
-    <h1 class="PageTitle" id="T:Sansar.Simulation.StreamChannel">StreamChannel  Enum</h1>
-    <p class="Summary" id="T:Sansar.Simulation.StreamChannel:Summary">For playing a stream from the scene.</p>
+    <h1 class="PageTitle" id="T:Sansar.Microthreading.ApiErrorMode">ApiErrorMode  Enum</h1>
+    <p class="Summary" id="T:Sansar.Microthreading.ApiErrorMode:Summary">
+            The error mode of the script. 
+            </p>
     <div>
       <h2>Syntax</h2>
-      <div class="Signature" id="T:Sansar.Simulation.StreamChannel:Signature">[Sansar.Script.Interface]<br />public enum <b>StreamChannel</b></div>
+      <div class="Signature" id="T:Sansar.Microthreading.ApiErrorMode:Signature">public enum <b>ApiErrorMode</b></div>
     </div>
-    <div class="Remarks" id="T:Sansar.Simulation.StreamChannel:Docs">
+    <div class="Remarks" id="T:Sansar.Microthreading.ApiErrorMode:Docs">
+      <h4 class="Subsection">See Also</h4>
+      <blockquote class="SubsectionBox" id="T:Sansar.Microthreading.ApiErrorMode:Docs:See Also">
+        <div>
+          <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.SetRelaxedErrorMode">Sansar.Script.ScriptBase.SetRelaxedErrorMode</a>
+        </div>
+        <div>
+          <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.SetStrictErrorMode">Sansar.Script.ScriptBase.SetStrictErrorMode</a>
+        </div>
+        <div>
+          <a href="../Sansar.Script/ScriptBase.html#M:Sansar.Script.ScriptBase.SetDefaultErrorMode">Sansar.Script.ScriptBase.SetDefaultErrorMode</a>
+        </div>
+      </blockquote>
       <h2 class="Section">Remarks</h2>
-      <div class="SectionBox" id="T:Sansar.Simulation.StreamChannel:Docs:Remarks">
+      <div class="SectionBox" id="T:Sansar.Microthreading.ApiErrorMode:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
       </div>
       <h2 class="Section">Members</h2>
-      <div class="SectionBox" id="T:Sansar.Simulation.StreamChannel:Docs:Members">
+      <div class="SectionBox" id="T:Sansar.Microthreading.ApiErrorMode:Docs:Members">
         <table class="Enumeration">
           <tr>
             <th>Member Name</th>
             <th>Description</th>
           </tr>
           <tr valign="top">
-            <td id="F:Sansar.Simulation.StreamChannel.AudioChannel">
-              <b>AudioChannel</b>
+            <td id="F:Sansar.Microthreading.ApiErrorMode.Default">
+              <b>Default</b>
             </td>
-            <td>Audio Stream 1.  See Scene Settings in Layout Editor for the URL.</td>
+            <td>
+            Write errors to the Script Debug Console instead of throwing exceptions for some common API errors while still throwing exceptions for the more serious errors.
+            </td>
           </tr>
           <tr valign="top">
-            <td id="F:Sansar.Simulation.StreamChannel.MediaChannel">
-              <b>MediaChannel</b>
+            <td id="F:Sansar.Microthreading.ApiErrorMode.Relaxed">
+              <b>Relaxed</b>
             </td>
-            <td>The Media Surface.  See Scene Settings in Layout Editor for the URL.</td>
+            <td>
+            Write errors to the Script Debug Console instead of throwing exceptions for almost all Sansar API errors.
+            </td>
+          </tr>
+          <tr valign="top">
+            <td id="F:Sansar.Microthreading.ApiErrorMode.Strict">
+              <b>Strict</b>
+            </td>
+            <td>
+            Throw exceptions for almost all Sansar API errors.
+            </td>
           </tr>
         </table>
       </div>
       <h2 class="Section">Requirements</h2>
-      <div class="SectionBox" id="T:Sansar.Simulation.StreamChannel:Docs:Version Information">
-        <b>Namespace: </b>Sansar.Simulation<br /><b>Assembly: </b>Sansar.Simulation (in Sansar.Simulation.dll)<br /><b>Assembly Versions: </b>1.1.0.0</div>
+      <div class="SectionBox" id="T:Sansar.Microthreading.ApiErrorMode:Docs:Version Information">
+        <b>Namespace: </b>Sansar.Microthreading<br /><b>Assembly: </b>Sansar.Script (in Sansar.Script.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
     </div>
-    <div class="Members" id="T:Sansar.Simulation.StreamChannel:Members">
+    <div class="Members" id="T:Sansar.Microthreading.ApiErrorMode:Members">
     </div>
     <hr size="1" />
     <div class="Copyright">
