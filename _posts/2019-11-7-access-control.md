@@ -10,7 +10,7 @@ In this post we will be building a better mouse trap to catch and expel unwanted
 
 The following assets are being used in this post:
 - [Invisible Cube - Collision](https://store.sansar.com/listings/d6b7b9ed-e403-43a5-aebe-b362c73e52d9/invisible-cube---collision)
-- [Access Control Script](https://github.com/lindenlab/sansar-script/tree/master/Users/binah)
+- [Access Control Script](https://github.com/lindenlab/sansar-script/blob/master/Users/binah/access-control/access-control.cs)
 
 ## Moderation Tools
 
