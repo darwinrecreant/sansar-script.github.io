@@ -74,9 +74,13 @@ The icon will turn yellow while connecting, magenta if there is an error or whit
 
 ![direct stream URL]({{ site.baseurl }}/assets/images/shoutcast/direct-stream-url.png)
 
-Follow the Streaming web audio guide on [help.sansar.com](https://help.sansar.com/hc/en-us/articles/115004444303-Streaming-web-audio) for connecting your web audio stream through the Scene Settings panel, or read ahead to the Audio Scripting post to learn how to control your stream with a script.
+Follow the Streaming web audio guide on [help.sansar.com](https://help.sansar.com/hc/en-us/articles/115004444303-Streaming-web-audio) for connecting your web audio stream through the Scene Settings panel, or add as is or modify this [Audio Controller Script](https://github.com/lindenlab/sansar-script/blob/master/Users/binah/audio/AudioController.cs) to suite your needs. 
+
 
 ![audio scene settings]({{ site.baseurl }}/assets/images/shoutcast/audio-scene-setting.png)
 
 
 
+*Notes*
+
+*[*ShoutVST*](https://www.kvraudio.com/product/shoutvst-by-r-tur) enables streaming sound into Icecast and SHOUTcast directly from VST hosts, ideal for streaming live performances directly from applications like Traktor or Ableton*
