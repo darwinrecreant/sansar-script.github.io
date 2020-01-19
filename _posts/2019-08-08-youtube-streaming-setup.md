@@ -82,3 +82,8 @@ Now that you are streaming you need to find the share link by clicking the arrow
 
 ![YouTube Live]({{ site.baseurl }}/assets/images/streaming-setup/yt-share-link.png)
 
+
+### Testing an embed of YouTube in GitHub Markdown.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J75AsY_dHII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
