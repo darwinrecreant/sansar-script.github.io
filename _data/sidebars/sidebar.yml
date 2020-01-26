@@ -18,8 +18,11 @@ entries:
   - title: Building
     category: building
 
-  - title: Clothing
+  - title: Clothing & Accessories
     category: clothing
+
+  - title: News
+    category: news
 
   - title: Quests
     category: quests
@@ -33,8 +36,8 @@ entries:
   - title: Store
     category: store
   
-  - title: Videos
-    category: videos
+  - title: Performances
+    category: performances
 
   - title: User Profiles
     category: user_profiles

@@ -1,7 +1,7 @@
 ---
 title: The studio making a real OASIS virtual world
 summary: A look inside the development and community behind LindenLab's youngest project, SANSAR
-category: videos
+category: news
 sidebar: sidebar
 tags: [ linden ]
 permalink: disrupt-video.html
