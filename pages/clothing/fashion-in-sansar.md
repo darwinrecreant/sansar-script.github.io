@@ -1,7 +1,6 @@
 ---
 title: Fashion in Sansar
-summary: Compilation of the hardworking Fashion & Entertainment Industry in Sansar.
-Movie & Avatar Styling by Retro Metallic.
+summary: Compilation of the hardworking Fashion & Entertainment Industry in Sansar. Movie & Avatar Styling by Retro Metallic.
 category: clothing
 sidebar: sidebar
 tags: [ youtube ]

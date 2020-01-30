@@ -3,7 +3,7 @@ title: Discord 101 with Princess Pea
 summary: Discord 101 
 category: misc
 sidebar: sidebar
-tags: [  ]
+tags: [ digital_university ]
 permalink: discord-101.html
 last_updated: January 28, 2020
 author: Robert Carlisle
