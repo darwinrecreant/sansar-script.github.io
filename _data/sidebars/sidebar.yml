@@ -21,14 +21,17 @@ entries:
   - title: Clothing & Accessories
     category: clothing
 
+  - title: Events
+    category: events
+  
+  - title: Miscellaneous
+    category: misc
+
   - title: News
     category: news
 
   - title: Quests
     category: quests
-
-  - title: Events
-    category: events
 
   - title: Scripting
     category: scripting
@@ -36,9 +39,6 @@ entries:
   - title: Store
     category: store
   
-  - title: Performances
-    category: performances
-
   - title: User Profiles
     category: user_profiles
 

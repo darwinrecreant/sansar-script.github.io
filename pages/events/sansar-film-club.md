@@ -1,7 +1,7 @@
 ---
-title: Sansar Film Club Episodes
+title: Sansar Film Club
 summary: Episode from Sansar roleplay/improv group
-category: performances
+category: events
 sidebar: sidebar
 tags: [ roleplay, youtube ]
 permalink: sansar-film-club.html

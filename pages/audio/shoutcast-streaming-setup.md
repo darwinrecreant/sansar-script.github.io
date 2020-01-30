@@ -4,7 +4,7 @@ summary: "How to setup a SHOUTcast web audio stream."
 category: audio
 tags: [ dj, music ]
 sidebar: sidebar
-permalink: guns-and-targets.html
+permalink: shoutcast-streaming-setup.html
 topnav: topnav
 author: Binah
 last_updated: November 17, 2019
