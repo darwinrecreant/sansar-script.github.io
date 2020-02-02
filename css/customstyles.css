@@ -75,6 +75,7 @@ body {
     background-color: #2D393F;
     color: white;
     width: 350px;
+    min-height: calc(100vh - 368px);
 }
 
 @media (max-width: 900px) {
@@ -83,6 +84,7 @@ body {
     }
     #tg-sb-sidebar {
         width: auto;
+        height: auto;
     }
 }
 
@@ -299,6 +301,12 @@ div#toc {
     float: right;
     margin-left: 10px;
     width: 300px;
+}
+
+@media (max-width: 900px) {
+    div#toc {
+        float: none;
+    }
 }
 
 div#toc ul {
