@@ -26,4 +26,4 @@ author: Fire Goat 2
 
 ## How To Rig Moved Bones Sansar
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WWsfuG8X1L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>m
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WWsfuG8X1L0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
