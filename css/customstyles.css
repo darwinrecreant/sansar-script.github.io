@@ -67,9 +67,53 @@ body {
 
 
 .row {
-    margin: 24px 20px;
+    margin: 0;
+    display: flex;
 }
 
+#tg-sb-sidebar {
+    background-color: #2D393F;
+    color: white;
+    width: 350px;
+    min-height: calc(100vh - 368px);
+}
+
+@media (max-width: 900px) {
+    .row {
+        display: block;
+    }
+    #tg-sb-sidebar {
+        width: auto;
+        height: auto;
+    }
+}
+
+#tg-sb-sidebar, #tg-sb-content {
+    float: none;
+    padding: 20px;
+}
+
+#tg-sb-content p, #tg-sb-content li {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.nav li a {
+    background-color: transparent;
+    color: white;
+}
+
+.nav li a.active {
+    font-weight: bold;
+}
+
+code {
+    color: black;
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,.1);
+    border-radius: 4px;
+}
 
 .breadcrumb > .active {color: #777 !important;}
 
@@ -253,39 +297,50 @@ ul#results-container a:hover {
     margin: 3px;
 }
 
+div#toc {
+    float: right;
+    margin-left: 10px;
+    width: 300px;
+}
+
+@media (max-width: 900px) {
+    div#toc {
+        float: none;
+    }
+}
+
+div#toc ul {
+    border-radius: 5px;
+    color: gray;
+}
+
+div#toc > ul {
+    border: 1px solid gray;
+    padding: 15px;
+}
+
 div#toc ul li {
     margin: 8px 0px 8px 22px;
     font-size: 90%;
     list-style: square;
 }
-div#toc ul {
-    background-color: whitesmoke;
-    padding: 5px;
-    border-radius: 5px;
-    max-width: 300px;
-    color: gray;
-}
 
 div#toc ul li ul {
     padding-left:8px;
-
+}
+div#toc ul li ul li {
+    list-style-type: circle;
 }
 
-div#toc ul li ul li::before {
-    content: "–  ";
-}
-
-div#toc >ul::before {
+div#toc > ul::before {
     content: "Table of Contents";
+    display: block;
+    border-bottom: 1px solid gray;
     font-weight: 500;
     color: #555;
     text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-    width:70px;
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 li.dropdownActive a {
@@ -371,22 +426,12 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav a:hover, .nav li.active > a {
-    background-color: #21bccf;
-    color: #f5f5f5;
+    background-color: rgba(128,128,128,.5);
+    font-weight: bold;
 }
 
-.nav > li.active > a  {
-background-color: #21bccf;
-}
 
 .nav li a {
-    font-size: 12px;
-    line-height: 18px;
-    padding: 2px 10px;
-    background-color: #f1f1f1;
-}
-
-.nav > li > a {
     font-size: 14px;
     line-height: 20px;
     padding: 4px 10px;
@@ -394,6 +439,7 @@ background-color: #21bccf;
 
 ul#mysidebar {
     border-radius:0px;
+    width: 300px;
 }
 
 .nav ul li ul li a {
@@ -404,26 +450,18 @@ ul#mysidebar {
     color: #248EC2;
     font-weight:bold;
     padding-left:20px;
-    background-color: whitesmoke !important;
 }
 
 
-.nav ul li a {
-    background-color: #FAFAFA;
-}
 
-.nav li a {
-    padding-right:10px;
+.nav li li a {
+    padding-left: 20px;
 }
 
 .nav li a:hover {
-    background-color: #8D8D8D;
+    background-color: rgba(128,128,128,.5);
 }
 
-.nav ul li a {
-    border-top:1px solid whitesmoke;
-    padding-left:10px;
-}
 /* end sidebar */
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -603,7 +641,7 @@ a.fa.fa-envelope-o.mailto {
     font-weight: 600;
 }
 
-h3 {color: #ED1951; font-weight:normal; font-size:130%;}
+h3 {color: #808080; font-weight:normal; font-size:130%;}
 h4 {color: #808080; font-weight:normal; font-size:120%; font-style:italic;}
 
 .alert, .callout {
@@ -619,11 +657,6 @@ ol li ol li {list-style-type: lower-alpha;}
 ol li ul li {list-style-type: disc;}
 
 li img {clear:both; }
-
-div#toc ul li ul li {
-    list-style-type: none;
-    margin: 5px 0px 0px 0px;
-}
 
 .tab-content {
     padding: 15px;
@@ -726,9 +759,6 @@ ol.series li {
     border-color: #248ec2 !important;
 }
 
-#mysidebar .nav ul {
-    background-color: #FAFAFA;
-}
 .nav ul.series li {
     list-style: decimal;
     font-size:12px;
@@ -870,18 +900,18 @@ span.soft {
         position: relative;
     }
 }
-
+/* 
 @media (min-width: 1000px) {
 
     ul#mysidebar {
         width: 225px;
     }
-}
+} */
 
 @media (max-width: 900px) {
 
     ul#mysidebar {
-        max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -892,11 +922,15 @@ span.soft {
 
 
 .post-content img {
-    margin: 12px 0px 3px 0px;
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 .col-md-9 img {
     max-width: 100%;

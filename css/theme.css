@@ -3393,8 +3393,8 @@ body.print h4 {color: #679DCE !important; font-size:14px; font-style: italic;} *
   
   @font-face {
     font-family: Ionicons;
-    src: url(/assets/fonts/ionicons.eot?v=2.0.0);
-    src: url(/assets/fonts/ionicons.eot?v=2.0.0#iefix) format("embedded-opentype"), url(/assets/fonts/ionicons.ttf?v=2.0.0) format("truetype"), url(/assets/fonts/ionicons.woff?v=2.0.0) format("woff"), url(/assets/fonts/ionicons.svg?v=2.0.0#Ionicons) format("svg");
+    src: url(/fonts/ionicons.eot?v=2.0.0);
+    src: url(/fonts/ionicons.eot?v=2.0.0#iefix) format("embedded-opentype"), url(/fonts/ionicons.ttf?v=2.0.0) format("truetype"), url(/fonts/ionicons.woff?v=2.0.0) format("woff"), url(/fonts/ionicons.svg?v=2.0.0#Ionicons) format("svg");
     font-weight: 400;
     font-style: normal;
   }
